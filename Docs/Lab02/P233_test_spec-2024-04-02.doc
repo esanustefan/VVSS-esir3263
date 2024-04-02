@@ -12,7 +12,7 @@
 <p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
 <div class="doc_title"><p>Test Specification</p></div>
 <div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj233<br/>Test Suite: Prj233 - dmir3114_BBT</p></div>
-<div class="summary"><p id="printedby">Printed by TestLink on 26/03/2024</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 02/04/2024</p></div>
 <div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
 <h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.dmir3114_BBT</a></b></p>
 <p style="padding-left: 45px;"><a href="#toc_tc20655">P233-1: AddPayment_TestCase1</a></p><p style="padding-left: 45px;"><a href="#toc_tc20657">P233-2: AddPayment_TestCase2</a></p><p style="padding-left: 45px;"><a href="#toc_tc20659">P233-3: AddPayment_TestCase3</a></p><p style="padding-left: 45px;"><a href="#toc_tc20661">P233-4: AddPayment_TestCase4</a></p></div><h1 class="doclevel" >Scope</h1>
@@ -22,12 +22,14 @@
 <div><p>Se testeaza adaugarea in fisier a unei plati de pizza.</p>
 </div><a name="toc_tc20655"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case P233-1: AddPayment_TestCase1&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
 <tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">dmir3114</td></tr>
-<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Se adauga o linie in fisier de forma masa,tip plata,val achitata.</p>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Nu se arunca eroare.</p>
 </td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>&nbsp;</p>
 
 <p>Tip plata: cash sau card.</p>
 
 <p>val achitata: float, &gt;0.</p>
+
+<p>Nr masa intre 1 si 10, nr natural</p>
 </td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
@@ -43,7 +45,7 @@
 	<tbody>
 		<tr>
 			<td colspan="6">
-			<p>Se adauga o linie in fisier de forma masa,tip plata,val achitata.</p>
+			<p>Se arunca eroare.</p>
 
 			<p>&nbsp;</p>
 			</td>
@@ -54,7 +56,9 @@
 </table>
 </td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Tip plata: cash sau card.</p>
 
-<p>val achitata: float, &gt;0</p>
+<p>val achitata: float, &lt;0</p>
+
+<p>numar masa intre 1 si 10, nr natural</p>
 </td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
@@ -70,7 +74,7 @@
 	<tbody>
 		<tr>
 			<td colspan="6">
-			<p>Se adauga o linie in fisier de forma masa,tip plata,val achitata.</p>
+			<p>Se arunca eroare.</p>
 
 			<p>&nbsp;</p>
 			</td>
@@ -82,6 +86,8 @@
 </td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Tip plata: cash sau card.</p>
 
 <p>val achitata: float, &gt;0.</p>
+
+<p>Nr masa &gt;10</p>
 </td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
@@ -93,15 +99,10 @@
 </div>
 <a name="toc_tc20661"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case P233-4: AddPayment_TestCase4&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
 <tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">dmir3114</td></tr>
-<tr><td colspan="4"><span class="label">Summary:</span><br /><table>
-	<tbody>
-		<tr>
-			<td colspan="6">
-			<p>Se adauga o linie in fisier de forma masa,tip plata,val achitata.</p>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Se arunca eroare.</p>
 
-			<p>&nbsp;</p>
-			</td>
-		</tr>
+<table>
+	<tbody>
 		<tr>
 		</tr>
 	</tbody>
@@ -109,6 +110,8 @@
 </td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Tip plata: cash sau card.</p>
 
 <p>val achitata: float, &gt;0.</p>
+
+<p>Nr masa &lt; 1</p>
 </td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
