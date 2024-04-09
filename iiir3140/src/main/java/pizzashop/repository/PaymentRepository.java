@@ -17,6 +17,14 @@ public class PaymentRepository {
         readPayments();
     }
 
+    public void deleteAllPayments(){
+        this.paymentList=new ArrayList<>();
+    }
+
+    public void nullAllPayments(){
+        this.paymentList=null;
+    }
+
     private void readPayments(){
         //ClassLoader classLoader = PaymentRepository.class.getClassLoader();
         File file = new File(filename);
