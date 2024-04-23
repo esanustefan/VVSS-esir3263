@@ -132,6 +132,7 @@
                 <version>2.22.1</version>
                 <configuration>
                     <argLine>
+                        --add-exports pizzashop/pizzashop.service=ALL-UNNAMED
                         --add-opens pizzashop/pizzashop.service=ALL-UNNAMED
                     </argLine>
                 </configuration>
