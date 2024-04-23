@@ -131,7 +131,10 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+                    <argLine>
+                        --add-exports org.junit.platform.commons/org.junit.platform.commons.util=ALL-UNNAMED
+                        --add-exports org.junit.platform.commons/org.junit.platform.commons.logging=ALL-UNNAMED
+                    </argLine>
                 </configuration>
             </plugin>
             <plugin>
