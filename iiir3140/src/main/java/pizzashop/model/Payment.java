@@ -35,6 +35,7 @@ public class Payment {
         this.amount = amount;
     }
 
+
     @Override
     public String toString() {
         return tableNumber + ","+type +"," + amount;
