@@ -18,3 +18,11 @@
 1,Card,48.0
 4,Cash,2.0
 2,Cash,0.01
+1,Card,48.0
+1,Card,48.0
+4,Cash,2.0
+2,Cash,0.01
+1,Card,48.0
+1,Card,48.0
+4,Cash,2.0
+2,Cash,0.01
