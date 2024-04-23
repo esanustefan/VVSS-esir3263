@@ -126,6 +126,12 @@
                     <argLine>
                         --add-exports pizzashop/pizzashop.service=ALL-UNNAMED
                         --add-opens pizzashop/pizzashop.service=ALL-UNNAMED
+                        --add-exports pizzashop/pizzashop.integration.step1=ALL-UNNAMED
+                        --add-opens pizzashop/pizzashop.integration.step1=ALL-UNNAMED
+                        --add-exports pizzashop/pizzashop.integration.step2=ALL-UNNAMED
+                        --add-opens pizzashop/pizzashop.integration.step2=ALL-UNNAMED
+                        --add-exports pizzashop/pizzashop.integration.step3=ALL-UNNAMED
+                        --add-opens pizzashop/pizzashop.integration.step3=ALL-UNNAMED
                     </argLine>
                 </configuration>
             </plugin>
