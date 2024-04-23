@@ -31,7 +31,7 @@ class TestF01 {
 
     @Test
     @DisplayName("Test Valid ECP")
-    void test_valid_ECP() {
+    public void test_valid_ECP() {
         table=2;
         amount=0.01;
         paymentType=PaymentType.Cash;
