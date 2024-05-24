@@ -104,10 +104,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;
 &nbsp;    public void addPayment(int table, PaymentType type, double amount) throws Exception {
 <b class="nc">&nbsp;        if (table &lt; 1 || table &gt; 10) {</b>
-<b class="nc">&nbsp;            throw new Exception(&quot;MASA PROASTA&quot;);</b>
+<b class="nc">&nbsp;            throw new Exception(&quot;MASA GRESITA&quot;);</b>
 &nbsp;        }
 <b class="nc">&nbsp;        if (amount &lt;= 0) {</b>
-<b class="nc">&nbsp;            throw new Exception(&quot;SUMA PROASTA&quot;);</b>
+<b class="nc">&nbsp;            throw new Exception(&quot;SUMA GRESITA&quot;);</b>
 &nbsp;        }
 <b class="nc">&nbsp;        Payment payment = new Payment(table, type, amount);</b>
 <b class="nc">&nbsp;        payRepo.add(payment);</b>

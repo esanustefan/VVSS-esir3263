@@ -54,7 +54,7 @@ class TestF01 {
             assert(false);
         } catch (Exception e) {
             assert(true);
-            assert(e.getMessage().equals("SUMA PROASTA"));
+            assert(e.getMessage().equals("SUMA GRESITA"));
         }
     }
 
@@ -69,7 +69,7 @@ class TestF01 {
             assert(false);
         } catch (Exception e) {
             assert(true);
-            assert(e.getMessage().equals("MASA PROASTA"));
+            assert(e.getMessage().equals("MASA GRESITA"));
         }
     }
 

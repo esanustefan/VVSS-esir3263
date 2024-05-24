@@ -28,10 +28,10 @@ public class PizzaService {
 
     public void addPayment(int table, PaymentType type, double amount) throws Exception {
         if (table < 1 || table > 10) {
-            throw new Exception("MASA PROASTA");
+            throw new Exception("MASA GRESITA");
         }
         if (amount <= 0) {
-            throw new Exception("SUMA PROASTA");
+            throw new Exception("SUMA GRESITA");
         }
         Payment payment = new Payment(table, type, amount);
         payRepo.add(payment);
